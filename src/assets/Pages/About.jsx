@@ -7,6 +7,22 @@ export default function About() {
   const [searchParams] = useSearchParams();
   const sort = searchParams.get("sort");
 
+  const copy = [...RunCards];
+
+  if (sort === "asc") {
+    //sort ascending
+    copy.sort(handleSort);
+  } else if (sort === "desc") {
+    //sort descending
+    copy.sort(handleSort).reverse();
+  }
+
+  function handleSort(a, b) {
+    if (a.totalCost < b.totalCost) return -1;
+    if (a.totalCost > b.totalCost) return 1;
+    return 0;
+  }
+
   return (
     <div>
       <h1>Providing personalised coaching for your goals!</h1>
@@ -14,7 +30,7 @@ export default function About() {
       {/* sort:{sort} */}
       <SortForm />
       <div className="distances-container">
-        {RunCards.map((items) => (
+        {copy.map((items) => (
           <DistanceCards
             key={items.id}
             imgLink={items.imgLink}

@@ -5,6 +5,7 @@ export const RunCards = [
     itemName: "1500m",
     itemDuration: "6 weeks",
     itemCost: "£10 per week",
+    totalCost: 60,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const RunCards = [
     itemName: "5km",
     itemDuration: "8 weeks",
     itemCost: "£10 per week",
+    totalCost: 80,
   },
   {
     id: 3,
@@ -19,20 +21,7 @@ export const RunCards = [
     itemName: "10km",
     itemDuration: "10 weeks",
     itemCost: "£10 per week",
-  },
-  {
-    id: 4,
-    imgLink: "runners-hm.jpg",
-    itemName: "Half Marathon",
-    itemDuration: "12 weeks",
-    itemCost: "£15 per week",
-  },
-  {
-    id: 5,
-    imgLink: "brussels-marathon.jpg",
-    itemName: "Marathon",
-    itemDuration: "12 weeks",
-    itemCost: "£15 per week",
+    totalCost: 100,
   },
   {
     id: 6,
@@ -40,5 +29,22 @@ export const RunCards = [
     itemName: "Ultra Marathon",
     itemDuration: "12 weeks +",
     itemCost: "£20 per week",
+    totalCost: 240,
+  },
+  {
+    id: 4,
+    imgLink: "runners-hm.jpg",
+    itemName: "Half Marathon",
+    itemDuration: "11 weeks",
+    itemCost: "£15 per week",
+    totalCost: 165,
+  },
+  {
+    id: 5,
+    imgLink: "brussels-marathon.jpg",
+    itemName: "Marathon",
+    itemDuration: "12 weeks",
+    itemCost: "£15 per week",
+    totalCost: 180,
   },
 ];
